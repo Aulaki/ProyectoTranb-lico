@@ -1,0 +1,73 @@
+.detailReservation {
+  text-align: center;
+  .resumen-reseva {
+    background: linear-gradient(
+      135deg,
+      rgba(145, 202, 216, 0.75) 30%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(40, 54, 131, 0.75) 100%
+    );
+    border-radius: 20px;
+    width: fit-content;
+    padding: 40px;
+    box-shadow: 0px 0px 10px 2px var(--tranbolico-azulClaro);
+  }
+  .boton-detail-date-reservation {
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    font-family: "VinaSans-Regular.ttf";
+    padding: 10px 35px;
+    color: black;
+    min-width: 150px;
+    min-height: 50px;
+    background-color: var(--tranbolico-verde);
+  }
+  .boton-detail-time-reservation {
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    font-family: "VinaSans-Regular.ttf";
+    padding: 10px 35px;
+    color: black;
+    min-width: 150px;
+    min-height: 50px;
+    background-color: var(--tranbolico-azulClaro);
+  }
+  h5 {
+    margin-top: 5px;
+  }
+}
+.desglose-precio {
+  span {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--tranbolico-fucsia);
+    color: white;
+  }
+}
+
+.buttons-Details {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ida_vuelta_resumen {
+  font-size: 1.1rem;
+}
+
+.h5_resumen {
+  font-size: 1.1rem;
+}
+
+.h5_resumen_plus{
+  font-size: 1.4rem;
+
+}
+
+@media (max-width: 540px) {
+  .buttons-Details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

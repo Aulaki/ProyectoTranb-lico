@@ -1,0 +1,51 @@
+.ppal-userView {
+  background-color: var(--tranbolico-azul);
+  width: 100%;
+  font-family: "VinaSans-Regular.ttf";
+}
+
+.ppal-userView h2 {
+  font-size: 3rem;
+}
+
+.form-user-search {
+  border: 3px solid var(--tranbolico-azul);
+  font-family: "Akkurat-Regular.ttf";
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.btn-buscarUser {
+  border: none;
+  background-color: var(--tranbolico-azul);
+  font-style: italic;
+}
+
+.btn-buscarUser:hover,
+.btn-buscarUser:focus,
+.btn-buscarUser:active,
+.btn-buscarUser:focus:active {
+  background-color: #13268e;
+}
+
+.accordion-user .accordion-header {
+  min-height: 50px; // Ajusta este valor según tus necesidades
+}
+
+.d-flex.justify-content-center.my-3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.accordion-user {
+  padding-top: 0.5rem; // Ajusta este valor según tus necesidades
+  padding-bottom: 0.5rem; // Ajusta este valor según tus necesidades
+}
+
+.accordion-user h4 {
+  margin: 0 auto;
+}
+
+th, td {
+  align-content: center;
+}

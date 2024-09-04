@@ -1,0 +1,92 @@
+.ppal-login {
+  background-color: var(--tranbolico-azul);
+  width: 100%;
+  font-family: "VinaSans-Regular.ttf";
+}
+
+.ppal-login h2 {
+  font-size: 3rem;
+}
+
+.contenedor-login {
+  font-family: "Akkurat-Regular.ttf";
+  font-size: 1rem;
+  background-color: #28b7c7;
+  border-radius: 10px;
+  padding-block: 50px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+.div-login_img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% -50%;
+}
+.login-img {
+  background-color: #28b7c7;
+  border-radius: 100px;
+  border: 1px solid black;
+  width: 70px;
+  box-shadow: 0 0 0 5px;
+}
+
+.input-form-login {
+  border-radius: 10px;
+  border: 2px solid black;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 200px;
+}
+
+.btn-iniciar-login {
+  border: none;
+  background-color: var(--tranbolico-azul);
+  font-style: italic;
+}
+
+.btn-volver-login {
+  background-color: var(--tranbolico-fucsia);
+}
+
+.contenedor-btns-login {
+  width: 100%;
+  max-width: 100px;
+}
+.btn-iniciar-login,
+.btn-volver-login {
+  min-width: 125px;
+  border-radius: 30px;
+}
+
+.btn-iniciar-login:hover,
+.btn-iniciar-login:focus,
+.btn-iniciar-login:active,
+.btn-iniciar-login:focus:active {
+  background-color: #13268e;
+}
+
+.btn-volver-login:hover,
+.btn-volver-login:focus,
+.btn-volver-login:active,
+.btn-volver-login:focus:active {
+  background-color: #e30d42;
+}
+
+.frase-2-login a {
+  color: var(--tranbolico-fucsia);
+}
+
+@media (max-width: 800px) {
+  .contenedor-login {
+    width: 100%;
+    min-width: 300px;
+    padding-inline: 50px;
+  }
+  .input-form-login {
+    max-width: 100%;
+  }
+}

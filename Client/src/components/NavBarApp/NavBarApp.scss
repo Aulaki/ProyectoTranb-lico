@@ -1,0 +1,184 @@
+@keyframes logoRotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes avatarSpin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(-10deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.NavbarLogo {
+  font-family: "VinaSans-Regular.ttf", system-ui;
+  font-size: calc(1rem + 2vw);
+  color: white;
+  margin-inline: 50px;
+  margin-block: 5px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.NavbarLogo:active {
+  animation: logoRotateAnimation 0.3s ease-in-out;
+}
+
+.NavbarNavLink {
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Akkurat-Regular.ttf", system-ui;
+}
+
+.NavbarNavLink:hover {
+  color: var(--tranbolico-amarillo);
+}
+.NavbarNavLink:focus {
+  color: var(--tranbolico-amarillo);
+}
+
+.NavbarRegisterLogin {
+  background-color: white;
+  margin-inline: 10px;
+  color: var(--tranbolico-azul);
+  font-family: "Akkurat-Regular.ttf", system-ui;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 16px;
+  padding-inline: 10px;
+  transition-duration: 0.2s;
+}
+
+.NavbarRegisterLogin:hover {
+  background-color: var(--tranbolico-amarillo);
+  transition-duration: 0.5s;
+}
+
+.custom-menu {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.color {
+  color: var(--tranbolico-azul);
+}
+
+.NavbarRegisterLoginColor {
+  color: var(--tranbolico-azul);
+}
+
+.NavbarAvatar {
+  width: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .avatar-user {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .user-name-navbar {
+    display: none;
+  }
+}
+.avatar-user,
+.avatar-user-navbar {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.avatar-user:active,
+.avatar-user-navbar:active {
+  animation: avatarSpin 0.3s ease-in-out;
+}
+
+.NavbarLogoMobile {
+  display: none;
+  font-family: "VinaSans-Regular.ttf", system-ui;
+  font-size: calc(1rem + 2vw);
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+  font-size: 2.5rem;
+}
+
+.NavbarLogoMobile:active {
+  animation: logoRotateAnimation 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .NavbarRegisterLogin {
+    background-color: var(--tranbolico-azul);
+    margin-inline: 0;
+    font-weight: normal;
+    border: 0;
+    border-radius: 0px;
+    padding-inline: 0px;
+    font-size: 1.1rem;
+  }
+  .NavbarRegisterLoginColor {
+    color: white;
+  }
+
+  .NavbarRegisterLoginColor:hover,
+  .NavbarRegisterLoginColor:focus,
+  .NavbarRegisterLoginColor:active,
+  .NavbarRegisterLoginColor:focus:active {
+    color: var(--tranbolico-amarillo);
+    background-color: transparent;
+  }
+  .NavbarRegisterLogin:hover {
+    background-color: transparent;
+  }
+  .NavbarLogoMobile {
+    display: block;
+  }
+}
+
+@media screen and (width < 992px) {
+  .NavbarLogo {
+    display: none;
+  }
+}
+
+.NavbarLogout {
+  background-color: white;
+  color: var(--tranbolico-azul);
+  font-family: "Akkurat-Regular.ttf", system-ui;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 16px;
+  padding-inline: 5px;
+  transition-duration: 0.2s;
+  min-height: 50px;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.NavbarLogout:hover {
+  color: white;
+  transform: rotate(2deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.NavbarLogout:hover,
+.NavbarLogout:focus,
+.NavbarLogout:active,
+.NavbarLogout:focus:active {
+  background-color: var(--tranbolico-rosa);
+}

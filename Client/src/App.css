@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "VinaSans-Regular.ttf";
+  src: url("./assets/fonts/VinaSans-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akkurat-Regular.ttf";
+  src: url("./assets/fonts/Akkurat-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --tranbolico-azul: #283583;
+  --tranbolico-fucsia: #e72957;
+  --tranbolico-rosa: #e3b6d4;
+  --tranbolico-azulClaro: #91cad8;
+  --tranbolico-amarillo: #ffd92d;
+  --tranbolico-verde: #b3b420;
+}

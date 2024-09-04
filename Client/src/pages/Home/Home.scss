@@ -1,0 +1,245 @@
+.contenedor-home {
+  font-family: "Akkurat-Regular.ttf", system-ui;
+}
+
+.contenedor-home img {
+  width: 215px;
+  height: 100px;
+}
+
+.h1-main-home {
+  font-family: "VinaSans-Regular.ttf", system-ui;
+  font-size: 3.5rem;
+  color: var(--tranbolico-azul);
+}
+
+.tuvuelta-home {
+  color: var(--tranbolico-azul);
+  font-size: 1.2rem;
+}
+
+.origen-home {
+  margin-right: -5px;
+}
+
+.origen-home,
+.destino-home {
+  background-color: var(--tranbolico-azul);
+  color: white;
+  min-height: 8vh;
+  min-width: 100%;
+  border-radius: 15px 0px 0px 15px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.3rem;
+}
+
+.destino-home {
+  margin-left: -10px;
+}
+
+.btn-home-buscar {
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: var(--tranbolico-azulClaro);
+
+  padding: 13.5px;
+  border-radius: 0 15px 15px 0;
+  margin-top: 15px;
+}
+
+.btn-home-buscar:hover {
+  background-color: #118899;
+}
+
+.contenedor-botones-home {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contenedor-botones-home > Button {
+  border: none;
+  font-size: 1.8rem;
+
+  border-radius: 1rem;
+  font-family: "VinaSans-Regular.ttf";
+  padding: 10px 35px;
+  min-width: 150px;
+  min-height: 50px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.btn-reservas-home {
+  background-color: var(--tranbolico-azul);
+}
+
+.btn-reservas-home:hover,
+.btn-reservas-home:focus,
+.btn-reservas-home:active,
+.btn-reservas-home:focus:active {
+  background-color: #13268e;
+}
+
+.btn-rutas-home {
+  background-color: var(--tranbolico-fucsia);
+}
+
+.btn-rutas-home:hover,
+.btn-rutas-home:focus,
+.btn-rutas-home:active,
+.btn-rutas-home:focus:active {
+  background-color: #ea013b;
+}
+
+.btn-conocenos-home {
+  background-color: var(--tranbolico-amarillo);
+  color: var(--tranbolico-azul);
+}
+
+.btn-conocenos-home:hover,
+.btn-conocenos-home:focus,
+.btn-conocenos-home:active,
+.btn-conocenos-home:focus:active {
+  background-color: #facc00;
+  color: var(--tranbolico-azul);
+}
+
+.btn-faqs-home {
+  background-color: var(--tranbolico-azulClaro);
+  color: var(--tranbolico-azul);
+}
+
+.btn-faqs-home:hover,
+.btn-faqs-home:focus,
+.btn-faqs-home:active,
+.btn-faqs-home:focus:active {
+  background-color: #53afc6;
+  color: var(--tranbolico-azul);
+}
+
+.contenedor-home-criaturas {
+  color: white;
+  gap: 3rem;
+}
+
+.contenedor-home-criaturas p {
+  font-family: "VinaSans-Regular.ttf";
+  font-size: 2rem;
+}
+
+.contenedor-home-criaturas img {
+  width: 140px;
+  height: 140px;
+}
+
+.home-criatura-1,
+.home-criatura-2,
+.home-criatura-3 {
+  background-color: var(--tranbolico-azul);
+  max-width: 30vh;
+  max-height: 35vh;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+  top: -10px;
+  left: -10px;
+  line-height: 29px;
+}
+
+.home-criatura-1 {
+  background-color: var(--tranbolico-azul);
+}
+
+.home-criatura-2 {
+  background-color: var(--tranbolico-fucsia);
+}
+
+.home-criatura-3 {
+  background-color: var(--tranbolico-rosa);
+}
+
+.home-criatura-1 img {
+  position: relative;
+  bottom: 20px;
+}
+
+.home-criatura-2 img {
+  position: relative;
+  bottom: 20px;
+}
+
+.home-criatura-3 img {
+  position: relative;
+  bottom: -5px;
+}
+
+@media (max-width: 850px) {
+  .buscador-home {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .contenedor-botones-home > Button {
+    min-width: 260px;
+  }
+  .btn-conocenos-home,
+  .btn-faqs-home {
+    color: var(--tranbolico-azul);
+  }
+
+  .btn-buscarSBH {
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 18px 80px;
+    width: 100%;
+    width: 65vw;
+    margin-bottom: 30px;
+  }
+
+  .origen-home:hover,
+  .destino-home:hover {
+    background-color: #acb2df;
+  }
+
+  .origen-home,
+  .destino-home {
+    color: white;
+    min-height: 9vh;
+    min-width: 45vw;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .origen-home {
+    margin-right: 10px;
+  }
+
+  .destino-home {
+    margin-left: -10px;
+  }
+
+  .contenedor-botones-home {
+    padding-bottom: 30px;
+  }
+
+  .contenedor-botones-home > Button {
+    border: none;
+    font-size: 2.8rem;
+    border-radius: 1rem;
+    font-family: "VinaSans-Regular.ttf";
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .contenedor-home-criaturas {
+    display: none !important;
+  }
+}

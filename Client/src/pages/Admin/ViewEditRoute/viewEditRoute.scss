@@ -1,0 +1,29 @@
+.btn-add-route {
+  background-color: var(--tranbolico-azul);
+  border: 0;
+  &:hover {
+    background-color: var(--tranbolico-azul) !important;
+  }
+}
+
+.btn-volver-panel,
+.btn-volver-panel:hover,
+.btn-volver-panel:focus,
+.btn-volver-panel:active,
+.btn-volver-panel:focus:active {
+  color: black;
+  background-color: var(--tranbolico-amarillo);
+  border: none;
+}
+
+//ER editRoute
+//AP addPlanning
+@media (max-width: 800px) {
+  .ms-custom-ER {
+    margin-left: 6rem !important;
+  }
+
+  .ms-custom-AP {
+    margin-left: 8rem !important;
+  }
+}
