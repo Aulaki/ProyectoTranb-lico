@@ -55,7 +55,7 @@ export const AppRoutes = () => {
                 element={<ResetPassword />}
               />
               <Route path="/MsgVerifyEmail" element={<MsgVerifyEmail />} />
-              <Route path="/MsgVerifyEmail/:hashtoken" element={<MsgToken />} />
+              <Route path="/VerifyEmail/:hashtoken" element={<MsgToken />} />
               <Route path="/routes" element={<Rutas />} />
 
               {globalState?.user && (
